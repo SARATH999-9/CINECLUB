@@ -1,0 +1,200 @@
+.img2{
+    background-image:url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg?t=st=1738764832~exp=1738768432~hmac=03755cb761be9abafad6697523c7762660461912417a1542a15b72c96f90ebd5&w=996");
+    background-size: cover; 
+    width:100%;
+    height:100vh;
+    margin: 0px;
+    }
+.nav2 ul li{
+    list-type:none;
+    display:inline-block;
+    margin: 50px;
+    padding-right:190px;
+    position:relative;
+    padding: 15px 30px;
+}
+.nav2 ul li a{
+    margin-left:400px;
+    text-decoration:none;
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    padding: 10px;  
+    border-radius: 5px;
+    font-size:20px;
+    margin:20px;
+}
+.nav2 ul li a:hover{
+        animation: bounce 0.5s ease;
+    color:rgb(255, 34, 0);
+}
+    
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.touristplaces{
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    font-size: 15px;
+    margin:20px;
+    padding:15px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.drop {
+    display: none;
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.drop a {
+    padding: 15px 16px;
+    color:rgb(221, 255, 0);
+    text-decoration: none;
+    display: block;
+}
+
+.drop a:hover {
+    background-color:dodgerblue;
+}
+
+.dropdown:hover .drop {
+    display: block;
+}
+
+.dropdown-btn:hover {
+    background-color:dodgerblue;
+
+}
+
+
+.tripduration{
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    padding: 15px 20px;
+    margin-left:250px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    margin-left:200px;
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    color:rgb(221, 255, 0);
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color:dodgerblue;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-btn:hover {
+    background-color:dodgerblue;
+
+}
+
+.selecttour{
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    padding: 15px 20px;
+    margin-left:250px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dp {
+    display: none;
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    position: absolute;
+    margin-left:250px;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dp a {
+    padding: 12px 20px;
+    color:rgb(221, 255, 0);
+    text-decoration: none;
+    display: block;
+}
+
+.dp a:hover {
+    background-color:dodgerblue;
+
+}
+
+.dropdown:hover .dp {
+    display: block;
+}
+
+.dropdown-btn:hover {
+    background-color:dodgerblue;
+
+}
+.director{
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    padding: 15px 20px;
+    margin-left:250px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.directordrop{
+    display: none;
+    color:rgb(221, 255, 0);
+    background: linear-gradient(to right, #ccc8cd, #31aad6);
+    position: absolute;
+    margin-left:250px;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.directordrop a {
+    padding: 12px 20px;
+    color:rgb(221, 255, 0);
+    text-decoration: none;
+    display: block;
+}
+
+.directordrop a:hover {
+    background-color:dodgerblue;
+
+}
+
+.dropdown:hover .directordrop {
+    display: block;
+}
+
+.dropdown-btn:hover {
+    background-color:dodgerblue;
+
+}

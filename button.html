@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Buttons with Sub-options </title>
+  <style>
+    *{
+          background-image:url("https://static3.bigstockphoto.com/8/8/1/large1500/188264848.jpg");
+          background-size: cover;  
+    }
+    .filter-buttons {
+      display:inline-flex;
+      gap: 100px;
+      position: relative;
+      background-color: gold;
+    }
+    .filter-button {
+      padding: 10px 20px;
+      font-size: 17px;
+      cursor: pointer;
+      background-color: gold;
+      color: rgb(39, 183, 223);
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      position: relative;
+      margin-top: 25px;
+    }
+    .filter-button:hover {
+      background-color:rgb(116, 15, 199);
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      
+      z-index: 1;
+
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .dropdown-content a {
+      color: rgb(17, 255, 0);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 20px;
+    }
+    .dropdown-content a:hover {
+      
+    
+
+          background-size: cover;
+    }
+    .filter-button:focus + .dropdown-content, 
+    .dropdown-content:hover {
+      display: block;
+    }
+  </style>
+</head>
+<body align="center">
+
+<div class="filter-buttons">
+  <div class="dropdown">
+    <button class="filter-button" onclick="toggleDropdown('dropdownAZ')">A-Z</button>
+    <div id="dropdownAZ" class="dropdown-content">
+      <a href="A-M.HTML" onclick="filterAZ('A-M')">A-M</a>
+      <a href="N-Z.HTML" onclick="filterAZ('N-Z')">N-Z</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="filter-button" onclick="toggleDropdown('dropdownGenre')">Movie Genre</button>
+    <div id="dropdownGenre" class="dropdown-content">
+      <a href="action.html" onclick="filterGenre('Action')">Action</a>
+      <a href="comedy.html" onclick="filterGenre('Comedy')">Comedy</a>
+      <a href="drama.html" onclick="filterGenre('Drama')">Drama</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="filter-button" onclick="toggleDropdown('dropdownHeroes')">Heroes</button>
+    <div id="dropdownHeroes" class="dropdown-content">
+      <a href="prabhas1.html" onclick="filterHeroes('Prabhas')">Prabhas</a>
+      <a href="mahesh.html" onclick="filterHeroes('Mahesh Babu')">Mahesh Babu</a>
+      <a href="charan.html" onclick="filterHeroes('Ram Charan')">Ram Charan</a>
+      <a href="allu arjun.html" onclick="filterHeroes('Allu Arjun')">Allu Arjun</a>
+      <a href="ntr.jr.html" onclick="filterHeroes('N.T. Rama Rao Jr.')">N.T. Rama Rao Jr.</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="filter-button" onclick="toggleDropdown('dropdownDirectors')">Directors</button>
+    <div id="dropdownDirectors" class="dropdown-content">
+      <a href="rajamouli.html" onclick="filterDirectors('S.S.Rajamouli')">S. S. Rajamouli</a>
+      <a href="trivikram.html" onclick="filterDirectors('Trivikram Srinivas')">Trivikram Srinivas</a>
+      <a href="sukku.html" onclick="filterDirectors('Sukumar')">Sukumar</a>
+      <a href="puri.html" onclick="filterDirectors('Puri Jagannadh')">Puri Jagannadh</a>
+      <a href="koratala.html" onclick="filterDirectors('Koratala Siva')">Koratala Siva</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function filterAZ(option) {
+    console.log("Filtering A-Z by:", option);
+  }
+
+  function filterGenre(option) {
+    console.log("Filtering by Genre:", option);
+  }
+
+  function filterHeroes(option) {
+    console.log("Filtering by Hero:", option);
+  }
+
+  function filterDirectors(option) {
+    console.log("Filtering by Director:", option);
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.filter-button')) {
+      document.querySelectorAll('.dropdown-content').forEach(function(dropdown) {
+        dropdown.style.display = 'none';
+      });
+    }
+  }
+</script>
+
+</body>
+</html>
